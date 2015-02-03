@@ -66,6 +66,7 @@
     {name: "LESS", mime: "text/x-less", mode: "css", ext: ["less"]},
     {name: "LiveScript", mime: "text/x-livescript", mode: "livescript", ext: ["ls"], alias: ["ls"]},
     {name: "Lua", mime: "text/x-lua", mode: "lua", ext: ["lua"]},
+    {name: "Makefile", mime: "text/x-makefile", mode: "makefile"},
     {name: "Markdown", mime: "text/x-markdown", mode: "markdown", ext: ["markdown", "md", "mkd"]},
     {name: "mIRC", mime: "text/mirc", mode: "mirc"},
     {name: "MariaDB SQL", mime: "text/x-mariadb", mode: "sql"},
