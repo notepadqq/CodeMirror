@@ -12,15 +12,7 @@
 "use strict";
 
 CodeMirror.defineMode("cmake", function () {
-  var words = {};
   var variable_regex = /({)?[a-zA-Z0-9_]+(})?/;
-
-  function define(style, string) {
-    var split = string.split(' ');
-    for (var i = 0; i < split.length; i++) {
-      words[split[i]] = style;
-    }
-  }
 
   function tokenString(stream, state) {
     var current, prev, found_var = false;
@@ -43,7 +35,6 @@ CodeMirror.defineMode("cmake", function () {
   }
 
   function tokenize(stream, state) {
-    var word = stream.match(/[\w]+/, false);
     var ch = stream.next();
 
     // Have we found a variable?
