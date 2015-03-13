@@ -55,7 +55,7 @@ CodeMirror.defineMode('troff', function() {
       }
     }
     if (sol && ch === '.') {
-      if (stream.match('B ') || stream.match('I ')) {
+      if (stream.match('B ') || stream.match('I ') || stream.match('R ')) {
         return 'attribute';
       }
       if (stream.match('TH ') || stream.match('SH ') || stream.match('SS ') || stream.match('HP ')) {
