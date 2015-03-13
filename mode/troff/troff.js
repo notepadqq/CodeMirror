@@ -14,14 +14,8 @@
 CodeMirror.defineMode('troff', function() {
 
   var words = {};
-  function define(style, string) {
-    var split = string.split(' ');
-    for(var i = 0; i < split.length; i++) {
-      words[split[i]] = style;
-    }
-  };
 
-  function tokenBase(stream, state) {
+  function tokenBase(stream) {
     if (stream.eatSpace()) return null;
 
     var sol = stream.sol();
